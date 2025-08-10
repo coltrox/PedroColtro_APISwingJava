@@ -14,16 +14,16 @@ O sistema pede **nome**, **e-mail**, **idade** e **sexo**, valida as informaçõ
 
  **Validação de Dados**  
 - Verifica se todos os campos estão preenchidos.  
-- Checa se o e-mail está no formato correto usando **expressão regular**.  
-- Exibe mensagem de aviso se algo estiver errado.
+- Checa se o e-mail está no formato correto usando.  
+- Exibe mensagem de aviso se o email estiver errado ou se faltar informações.
 
  **Cadastro e Salvamento**  
 - Mostra na tela um resumo das informações cadastradas.  
 - Salva os dados no arquivo `cadastros.txt` sem apagar cadastros antigos.
 
- **Função Limpar**  
+ **Função de Limpar**  
 - Apaga todo o conteúdo dos campos.  
 - Desmarca a seleção de sexo.
 
- **Tratamento de Erros**  
+ **Tratamento de Erro**  
 - Informa caso haja falha ao salvar no arquivo.
