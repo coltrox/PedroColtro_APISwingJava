@@ -59,14 +59,14 @@ public class CadastroSimples {
                 JOptionPane.showMessageDialog(frame,
                     "Usuário cadastrado:\n" +
                     "Nome: " + n + "\n" +
-                    "E-mail: " + em + "\n" +
+                    "E-mail: " + em + "\n" +         // aqui mostra os dados do usuario cadastrado
                     "Idade: " + age + "\n" +
                     "Sexo: " + sexo);
             }
             try (BufferedWriter writer = new BufferedWriter(new FileWriter("cadastros.txt", true))) {
                 writer.write("Usuário:\n");
                 writer.write("Nome: " + n + "\n");
-                writer.write("E-mail: " + em + "\n");
+                writer.write("E-mail: " + em + "\n");                   // aqui eu pesquisei e fiz uma forma de salvar em um arquivo txt
                 writer.write("Idade: " + age + "\n");
                 writer.write("Sexo: " + sexo + "\n");
                 writer.write("\n");
@@ -76,10 +76,10 @@ public class CadastroSimples {
 
         });
 
-        // Ação botão "Limpar"
+        
         limpar.addActionListener(e -> {
             nome.setText("");
-            email.setText("");
+            email.setText("");                       // limpa as informações dos campos
             idade.setText("");
             grupoSexo.clearSelection();
         });
