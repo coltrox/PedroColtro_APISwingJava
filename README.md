@@ -1,34 +1,29 @@
-Cadastro de Usuário – Java Swing
-Esse projeto é um sistema simples de cadastro de usuários feito em Java usando Swing pra criar a interface gráfica.
-A ideia é ter uma tela onde a pessoa coloca nome, e-mail, idade e escolhe o sexo (Masculino/Feminino), o programa valida os dados e salva num arquivo .txt.
+# Cadastro de Usuário – Java Swing
 
-Funcionalidades
-Interface gráfica com Swing
+Projeto simples desenvolvido em **Java** utilizando **Swing** para criar uma interface gráfica que permite cadastrar usuários.  
+O sistema pede **nome**, **e-mail**, **idade** e **sexo**, valida as informações e salva tudo em um arquivo `.txt`.
 
-Campos de texto pra Nome, E-mail e Idade.
+---
 
-Botões de seleção (radio buttons) pra escolher Masculino ou Feminino.
+##  Funcionalidades
 
-Dois botões: Cadastrar e Limpar.
+ **Interface Gráfica (Swing)**  
+- Campos para **Nome**, **E-mail** e **Idade**.  
+- Botões de seleção para escolher **Masculino** ou **Feminino**.  
+- Botões **Cadastrar** e **Limpar**.
 
-Validação dos dados
+ **Validação de Dados**  
+- Verifica se todos os campos estão preenchidos.  
+- Checa se o e-mail está no formato correto usando **expressão regular**.  
+- Exibe mensagem de aviso se algo estiver errado.
 
-Verifica se todos os campos foram preenchidos.
+ **Cadastro e Salvamento**  
+- Mostra na tela um resumo das informações cadastradas.  
+- Salva os dados no arquivo `cadastros.txt` sem apagar cadastros antigos.
 
-Checa se o e-mail está no formato correto usando expressão regular.
+ **Função Limpar**  
+- Apaga todo o conteúdo dos campos.  
+- Desmarca a seleção de sexo.
 
-Se faltar alguma coisa ou o e-mail for inválido, mostra uma mensagem de aviso.
-
-Cadastro e salvamento
-
-Ao clicar em Cadastrar, mostra na tela um resumo com as informações inseridas.
-
-Salva todos os dados num arquivo cadastros.txt, adicionando um novo registro a cada vez que alguém é cadastrado.
-
-Função de limpar
-
-O botão Limpar apaga tudo que tá escrito nos campos e desmarca a seleção de sexo.
-
-Tratamento de erros
-
-Se der algum problema ao salvar no arquivo, o sistema avisa na hora.
+ **Tratamento de Erros**  
+- Informa caso haja falha ao salvar no arquivo.
